@@ -1,5 +1,7 @@
+// server.js
 import app from "./app.js";
-import connection from "./config/db.js";
-app.listen(8080, () => {
-  console.log("server setup completed");
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
